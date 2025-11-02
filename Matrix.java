@@ -25,7 +25,10 @@ public class Matrix {
 
         this.matrix = new double[rows][columns];
 
-        this.matrix = matrix;
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < columns; j++){
+                this.matrix[i][j] = matrix[i][j];
+            }
     }
 
     // Coonstructor given a matrix
